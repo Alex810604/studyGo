@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{1, 3, 2, 5, 4}
+	nums := []int{1, 3, 2, 4, 5, 4}
 	m := make(map[int]int)
 	var num []int
 	for _, r := range nums {
@@ -20,7 +20,7 @@ func main() {
 	if len(num) == 0 {
 		fmt.Println("дубликатов нет")
 	}
-	if len(num) > 1 {
+	if len(num) > 0 {
 		fmt.Printf("дубликаты: %d", num)
 	}
 
